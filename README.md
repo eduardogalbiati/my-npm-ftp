@@ -1,13 +1,17 @@
 # npm-ftp
 
 ## Install
-
-  * ```cp env.json.example env.json```
-  * ```npm i```
+  * Copy the env.json file
+  
+  ```cp env.json.example env.json```
+  
+  * Install dependencies
+  
+  ```npm i```
 
 ## Usage
 
-   * Fill the credentials and config
+   * Fill the credentials and config on ```env.json```
 
   ```
 {
