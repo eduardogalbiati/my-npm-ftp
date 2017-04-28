@@ -1,4 +1,4 @@
-# npm-ftp
+# my-npm-ftp
 
 ## Install
   * Copy the env.json file
