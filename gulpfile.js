@@ -16,12 +16,10 @@ gulp.task( 'deploy', function () {
         parallel: 10,
         log:      gutil.log
     } );
- 
-    var globs = [
-        process.env.SYNC_LOCAL_FOLDER
-    ];
- 
+
+    var globs = process.env.SYNC_LOCAL_FOLDER.split(/,\s?/);
+
     return gulp.src( globs, { base: '.', buffer: false } )
         .pipe( conn.newer( process.env.SYNC_REMOTE_FOLDER ) )
-        .pipe( conn.dest( process.env.SYNC_REMOTE_FOLDER ) ); 
+        .pipe( conn.dest( process.env.SYNC_REMOTE_FOLDER ) );
 } );

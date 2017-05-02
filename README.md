@@ -22,6 +22,11 @@
 	"SYNC_REMOTE_FOLDER": "/"
 }
 
+To add or ignore others folders separate it with a comma:
+{
+   "SYNC_LOCAL_FOLDER": "src/**, app/README.md, !src/test"
+}
+
   ```
 
   * Run the command
